@@ -1,14 +1,19 @@
 from flask import Flask, render_template, abort
 import json
+import os
 
 app = Flask(__name__)
 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
 def load_projects():
-    with open("data/projects.json", "r", encoding="utf-8") as f:
+    path = os.path.join(BASE_DIR, "data", "projects.json")
+    with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
 
 def load_education():
-    with open("data/education.json", "r", encoding="utf-8") as f:
+    path = os.path.join(BASE_DIR, "data", "education.json")
+    with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
 
 
