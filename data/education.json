@@ -1,0 +1,30 @@
+{
+  "education": [
+    {
+      "degree": "BSc in Computer Science",
+      "institution": "Hellenic Open University",
+      "field": "Data Science & Artificial Intelligence",
+      "years": "2022 – Present",
+      "description": "Focus on data analysis, machine learning, algorithms and applied AI systems."
+    }
+  ],
+
+  "training": [
+    {
+      "title": "Machine Learning & Data Analysis with Python",
+      "provider": "Online Platform / Institute",
+      "year": "2024"
+    },
+    {
+      "title": "Advanced Data Analytics & Automation",
+      "provider": "Online Platform / Institute",
+      "year": "2023"
+    },
+    {
+      "title": "Python Programming for Data Science",
+      "provider": "Online Platform / Institute",
+      "year": "2022"
+    }
+  ]
+}
+.
