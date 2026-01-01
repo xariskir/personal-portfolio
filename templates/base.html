@@ -1,27 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>{% block title %}Charis | Portfolio{% endblock %}</title>
+    <!-- SEO -->
+<title>Charis | Data Analyst & Machine Learning Engineer</title>
+<meta name="description" content="Personal portfolio of Charis, Data Analyst & Machine Learning Engineer specializing in data-driven products, machine learning and AI solutions.">
+
+<!-- Open Graph (LinkedIn, Facebook) -->
+<meta property="og:title" content="Charis | Data Analyst & Machine Learning Engineer">
+<meta property="og:description" content="I build data-driven and AI-powered products, focusing on analytics, machine learning and automation.">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://charis-kyritsis.dev/">
+<meta property="og:url" content="https://charis-kyritsis.dev/">
+<meta property="og:image" content="https://charis-kyritsis.dev/static/images/preview.png">
+<meta name="twitter:image" content="https://charis-kyritsis.dev/static/images/preview.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Charis | Data Analyst & ML Engineer">
+<meta name="twitter:description" content="Data-driven products, machine learning and AI solutions.">
+
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
+
 <body>
 
-<nav>
-    <a href="/">Home</a>
-    <a href="/about">About</a>
-    <a href="/skills">Skills</a>
-    <a href="/projects">Projects</a>
-    <a href="/contact">Contact</a>
-</nav>
+    <!-- BACKGROUND LAYER -->
+    <div class="bg-layer"></div>
+    <div class="bg-overlay"></div>
 
-<main>
-    {% block content %}{% endblock %}
-</main>
+    <!-- NAVIGATION -->
+    <nav class="top-nav">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/skills">Skills</a>
+        <a href="/projects">Works</a>
+        <a href="/education">Resume</a>
+        <a href="/contact">Contact</a>
+    </nav>
 
-<footer>
-    <p>© {{ 2026 }} — Built with Python & Flask</p>
-</footer>
+    <!-- PAGE CONTENT -->
+    <main class="page-content">
+        {% block content %}{% endblock %}
+    </main>
 
 </body>
 </html>
