@@ -1,0 +1,63 @@
+from flask import Flask, render_template, abort
+import json
+
+app = Flask(__name__)
+
+def load_projects():
+    with open("data/projects.json", "r", encoding="utf-8") as f:
+        return json.load(f)
+
+def load_education():
+    with open("data/education.json", "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+@app.route("/")
+def home():
+    return render_template("home.html")
+
+@app.route("/about")
+def about():
+    return render_template("about.html")
+
+@app.route("/skills")
+def skills():
+    return render_template("skills.html")
+
+@app.route("/education")
+def education():
+    data = load_education()
+    return render_template(
+        "education.html",
+        education=data["education"],
+        training=data["training"]
+    )
+
+
+@app.route("/projects")
+def projects():
+    projects = load_projects()
+    return render_template("projects.html", projects=projects)
+
+@app.route("/projects/<project_id>")
+def project_detail(project_id):
+    projects = load_projects()
+    project = next((p for p in projects if p["id"] == project_id), None)
+    if not project:
+        abort(404)
+    return render_template("project_detail.html", project=project)
+
+@app.route("/contact")
+def contact():
+    return render_template("contact.html")
+
+if __name__ == "__main__":
+    app.run(debug=True)
+
+
+@app.route("/education")
+def education():
+    return render_template("education.html")
+
+if __name__ == "__main__":
+    app.run()
