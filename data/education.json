@@ -1,59 +1,139 @@
 {
   "education": [
     {
-      "title": "BSc in Computer Science",
-      "institution": "Hellenic Open University (Ελληνικό Ανοικτό Πανεπιστήμιο)",
-      "period": "2023 – Present",
+      "title": "Bachelor’s Degree in Computer Engineering",
+      "institution": "Technological Educational Institute of Epirus",
+      "period": "Sep 2002 – Oct 2006",
       "focus": [
-        "Statistics & Probability",
-        "Data Structures, Algorithms & Databases",
-        "Machine Learning & Data Mining",
-        "Big Data Analytics",
-        "Foundations of Data Science"
+        "Computer Engineering Foundations",
+        "Programming & Systems",
+        "Databases & Data Processing",
+        "Mathematics & Applied Computing"
       ],
-      "description": "Strong academic foundation in computer science with emphasis on data analysis, machine learning, mathematical modeling, and large-scale data processing."
+      "description": "Undergraduate studies focused on computer engineering fundamentals, programming, databases, and applied mathematics."
+    },
+    {
+      "title": "Master’s Degree in Data Science & Machine Learning",
+      "institution": "Hellenic Open University (Ελληνικό Ανοικτό Πανεπιστήμιο)",
+      "period": "Sep 2023 – Present",
+      "focus": [
+        "Data Science Foundations",
+        "Machine Learning & Data Mining",
+        "Statistics & Probability",
+        "Big Data Analytics",
+        "Linear Algebra & Calculus for Machine Learning"
+      ],
+      "description": "Postgraduate studies with strong emphasis on data science, machine learning, statistical modeling, and mathematical foundations for AI."
     }
   ],
-  "training": [
-    {
-      "title": "Microsoft Certified: Azure AI Fundamentals",
-      "provider": "Microsoft",
-      "focus": [
-        "Azure Machine Learning",
-        "Azure Cognitive Services",
-        "Azure Bot Services",
-        "AI Workloads on Azure"
-      ]
-    },
-    {
-      "title": "Career Essentials in Generative AI",
-      "provider": "Microsoft & LinkedIn",
-      "focus": [
-        "Generative AI Concepts",
-        "Prompt Engineering",
-        "AI Ethics & Responsible AI",
-        "Applied Generative AI"
-      ]
-    },
-    {
-      "title": "Data Science & Machine Learning Foundations",
-      "provider": "LinkedIn Learning",
-      "focus": [
-        "Data Analysis & Wrangling",
-        "Statistical Analysis",
-        "Supervised & Unsupervised Learning",
-        "Data Visualization & Modeling"
-      ]
-    },
-    {
-      "title": "Mathematics for Data Science & Machine Learning",
-      "provider": "Elliniko Anoikto Panepistimio & Online Programs",
-      "focus": [
-        "Probability Theory",
-        "Statistics",
-        "Linear Algebra",
-        "Calculus for Machine Learning"
-      ]
-    }
-  ]
+  "certifications": {
+    "data_science": [
+      {
+        "title": "Data Analytics with SQL & Python",
+        "provider": "Workearly",
+        "issued": "Dec 2025",
+        "expires": "Dec 2026"
+      },
+      {
+        "title": "Complete Python Developer: Zero to Mastery",
+        "provider": "Udemy",
+        "issued": "Dec 2022"
+      },
+      {
+        "title": "Complete Guide to R: Wrangling, Visualizing & Modeling Data",
+        "provider": "LinkedIn Learning",
+        "issued": "Dec 2024"
+      },
+      {
+        "title": "R for Data Science: Analysis & Visualization",
+        "provider": "LinkedIn Learning"
+      },
+      {
+        "title": "Data Wrangling in R",
+        "provider": "LinkedIn Learning"
+      },
+      {
+        "title": "Learning Data Science: Understanding the Basics",
+        "provider": "LinkedIn Learning"
+      },
+      {
+        "title": "Data Science Foundations: Fundamentals",
+        "provider": "LinkedIn Learning",
+        "issued": "Dec 2024",
+        "note": "Expired"
+      }
+    ],
+    "machine_learning_math": [
+      {
+        "title": "Foundational Math for Machine Learning",
+        "provider": "LinkedIn Learning",
+        "issued": "Jul 2025"
+      },
+      {
+        "title": "Machine Learning Foundations: Calculus",
+        "provider": "LinkedIn Learning",
+        "issued": "Jul 2025"
+      },
+      {
+        "title": "Machine Learning Foundations: Linear Algebra",
+        "provider": "LinkedIn Learning",
+        "issued": "Jul 2025"
+      },
+      {
+        "title": "Machine Learning Foundations: Probability",
+        "provider": "LinkedIn Learning",
+        "issued": "Jul 2025"
+      },
+      {
+        "title": "Math for Data Science, Data Analysis & Machine Learning",
+        "provider": "Udemy",
+        "issued": "Sep 2023"
+      },
+      {
+        "title": "Statistics Foundations 1: The Basics",
+        "provider": "LinkedIn Learning"
+      }
+    ],
+    "ai_generative_ai": [
+      {
+        "title": "Microsoft Certified: Azure AI Fundamentals",
+        "provider": "Microsoft",
+        "issued": "Dec 2024"
+      },
+      {
+        "title": "Career Essentials in Generative AI",
+        "provider": "Microsoft & LinkedIn",
+        "issued": "Nov 2024"
+      },
+      {
+        "title": "Introduction to Prompt Engineering for Generative AI",
+        "provider": "LinkedIn Learning",
+        "issued": "Jul 2025"
+      },
+      {
+        "title": "Prompt Engineering with ChatGPT",
+        "provider": "LinkedIn Learning",
+        "issued": "Jul 2025"
+      },
+      {
+        "title": "Prompting ChatGPT with Multimodal Techniques",
+        "provider": "LinkedIn Learning",
+        "issued": "Feb 2025"
+      }
+    ],
+    "business": [
+      {
+        "title": "GROW YOUR BUSINESS – Certification Program",
+        "provider": "Athens University of Economics & Business (with COSMOTE)",
+        "issued": "Jul 2024",
+        "focus": [
+          "Business Intelligence & ERP",
+          "Logistics & Pricing",
+          "Digital Marketing Strategy",
+          "eCommerce Planning",
+          "ESG & Sustainable Development"
+        ]
+      }
+    ]
+  }
 }
