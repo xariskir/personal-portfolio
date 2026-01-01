@@ -39,13 +39,13 @@ def education_page():
         certifications=data["certifications"]
     )
 
-    
 
 
 @app.route("/projects")
 def projects():
     projects = load_projects()
     return render_template("projects.html", projects=projects)
+
 
 @app.route("/projects/<project_id>")
 def project_detail(project_id):
