@@ -56,13 +56,3 @@ def project_detail(project_id):
 def contact():
     return render_template("contact.html")
 
-if __name__ == "__main__":
-    app.run(debug=True)
-
-
-@app.route("/education")
-def education():
-    return render_template("education.html")
-
-if __name__ == "__main__":
-    app.run()
