@@ -381,3 +381,43 @@ body {
 }
 
 
+/* =========================
+   RESUME SECTION
+   ========================= */
+
+.resume {
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.resume-intro {
+    max-width: 650px;
+    margin: 0 auto 40px;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.resume-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.resume-note {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.resume-note a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.resume-note a:hover {
+    text-decoration: underline;
+}
