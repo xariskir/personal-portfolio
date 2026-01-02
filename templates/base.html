@@ -3,10 +3,10 @@
 <head>
 
 </head>
-{% set seo_title = self.title() | default("Charis Kyritsis | Data Analyst & Machine Learning Engineer") %}
-{% set seo_description = self.meta_description() | default(
-    "Personal website of Charis Kyritsis, Data Analyst & Machine Learning Engineer specializing in data-driven and AI-powered solutions."
-) %}
+{% block seo %}
+    {% set seo_title = "Charis Kyritsis | Data Analyst & Machine Learning Engineer" %}
+    {% set seo_description = "Personal website of Charis Kyritsis, Data Analyst & Machine Learning Engineer specializing in data-driven and AI-powered solutions." %}
+{% endblock %}
 
 <title>{{ seo_title }}</title>
 <meta name="description" content="{{ seo_description }}">
