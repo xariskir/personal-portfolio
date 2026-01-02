@@ -280,7 +280,7 @@ body {
    FIX INNER PAGE SPACING
 ============================= */
 .inner-page {
-    padding-top: 180px; /* increased from 140 */
+    padding-top: 140px; /* increased from 140 */
 }
 
 .inner-page h1 {
