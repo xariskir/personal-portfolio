@@ -1,23 +1,34 @@
 {% extends "base.html" %}
-{% block title %}Charis Kyritsis | Data Analyst & Machine Learning Engineer{% endblock %}
-{% block meta_description %}Personal portfolio of Charis Kyritsis, focused on data analytics, machine learning, AI projects and real-world business impact.{% endblock %}
 
 {% block content %}
-<section class="hero">
-    <span class="hero-eyebrow">Data • Machine Learning • AI</span>
+<section class="section started">
 
-    <h1>Charis <span>Kyritsis</span></h1>
+    <div class="started-content">
 
-    <h2>Data Analyst & Machine Learning Engineer</h2>
+        <div class="avatar"
+             style="background-image:url('/static/images/profile.jpg');">
+        </div>
 
-    <p class="hero-description">
-        I build data-driven and AI-powered products that turn data into
-        measurable business impact through analytics, automation, and machine learning.
-    </p>
+        <h1 class="h-title">
+            Charis <strong>Kyritsis</strong>
+        </h1>
 
-    <div class="hero-actions">
-        <a href="/projects" class="btn btn-primary">View My Work</a>
-        <a href="/contact" class="btn btn-secondary">Contact Me</a>
+        <div class="typed-subtitle">
+            Data Analyst • Machine Learning Engineer • AI Developer
+        </div>
+
+        <p class="hero-description">
+            I design and build data-driven & AI-powered products, combining
+            analytics, machine learning, automation and engineering to
+            generate real business impact.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="/projects" class="btn-main">View Projects</a>
+            <a href="/contact" class="btn-main btn-alt">Contact Me</a>
+        </div>
+
     </div>
+
 </section>
 {% endblock %}

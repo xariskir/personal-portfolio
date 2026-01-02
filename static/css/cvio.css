@@ -149,3 +149,42 @@ body {
     border-color: #4bffa5;
     transform: translateY(-5px);
 }
+
+/* Avatar */
+.avatar {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    margin: 0 auto 25px auto;
+    background-size: cover;
+    background-position: center;
+    border: 4px solid #4bffa5;
+    box-shadow: 0 0 20px rgba(75,255,165,0.35);
+}
+
+/* Hero Description */
+.hero-description {
+    color: #ccc;
+    max-width: 600px;
+    margin: 20px auto;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+/* Hero Buttons */
+.hero-buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn-alt {
+    border-color: #fff;
+    color: #fff;
+}
+
+.btn-alt:hover {
+    background: #fff;
+    color: #101010;
+}
