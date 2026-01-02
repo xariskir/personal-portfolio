@@ -229,3 +229,39 @@ body {
 .menu-content nav a:hover {
     color: #fff;
 }
+
+
+/* TOP NAVIGATION (CENTERED) */
+.top-menu {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 40px;
+    z-index: 20;
+}
+
+.top-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.top-menu a:hover {
+    color: #4bffa5;
+}
+
+/* Avatar inside glow circle */
+.avatar {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin: 0 auto 25px auto;
+    background-size: cover;
+    background-position: center;
+    border: 4px solid #4bffa5;
+    box-shadow: 0 0 25px rgba(75,255,165,0.4);
+}
