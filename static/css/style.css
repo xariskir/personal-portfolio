@@ -1176,3 +1176,403 @@ body {
         padding: 20px !important;
     }
 }
+
+
+
+/* Premium typography scale */
+h1, .section-title {
+  font-size: 2.4rem !important;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+h2 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  letter-spacing: -0.4px;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+}
+
+p, li {
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.card,
+.education-card,
+.cert-card,
+.project-card,
+.contact-card {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.18) !important;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+
+.card:hover,
+.education-card:hover,
+.cert-card:hover,
+.project-card:hover,
+.contact-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.22) !important;
+  transition: 0.25s ease;
+}
+button, .btn, .primary-btn {
+  background: transparent;
+  border: 2px solid var(--accent);
+  padding: 10px 20px;
+  border-radius: 12px;
+  color: var(--accent);
+  font-weight: 600;
+  transition: 0.25s ease;
+}
+
+button:hover, .btn:hover, .primary-btn:hover {
+  background: var(--accent);
+  color: #000;
+  transform: translateY(-2px);
+}
+nav {
+  background: rgba(0,0,0,0.35) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+section {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+body {
+  background: linear-gradient(180deg, #0f0f0f, #101213, #0f0f0f);
+}
+:root {
+  --accent: #29fca2;  /* πιο premium, λιγότερο neon */
+}
+
+/* CONTACT PAGE – PREMIUM CLEAN BOX SIZE */
+.contact-cards {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.contact-card {
+    width: 320px !important;       /* Μικραίνει το box */
+    padding: 18px 22px !important; /* Premium spacing */
+    border-radius: 16px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: 0.25s ease;
+}
+
+/* Hover effect minimal */
+.contact-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.22);
+}
+
+
+/* CONTACT PAGE — COMPACT TILE GRID ****************************************/
+
+.contact-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 22px;
+    max-width: 700px;
+    margin: 40px auto 0 auto;
+    padding: 0 20px;
+}
+
+.contact-card {
+    width: 150px;
+    height: 150px;                          /* Μικρότερο τετράγωνο */
+    background: rgba(255,255,255,0.05);
+    border-radius: 18px;
+    border: 1px solid rgba(255,255,255,0.07);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;                /* Κέντρο */
+    align-items: center;
+    text-align: center;
+    transition: 0.25s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.22);
+}
+
+/* Icons πιο μικρά */
+.contact-card img,
+.contact-card i {
+    width: 22px;
+    height: 22px;
+    margin-bottom: 6px;
+    opacity: 0.9;
+}
+
+/* Κείμενο μικρό & καθαρό */
+.contact-card h3 {
+    font-size: 0.95rem;
+    margin-bottom: 4px;
+}
+
+.contact-card p {
+    font-size: 0.8rem;
+    opacity: 0.85;
+    margin: 0;
+}
+
+
+
+
+/* SLIDE-IN ANIMATIONS (Premium Clean) */
+
+.slide-in-left {
+    opacity: 0;
+    transform: translateX(-25px);
+    animation: slideInLeft 0.6s ease-out forwards;
+}
+
+.slide-in-right {
+    opacity: 0;
+    transform: translateX(25px);
+    animation: slideInRight 0.6s ease-out forwards;
+}
+
+.slide-in-up {
+    opacity: 0;
+    transform: translateY(25px);
+    animation: slideInUp 0.6s ease-out forwards;
+}
+
+.slide-in-down {
+    opacity: 0;
+    transform: translateY(-25px);
+    animation: slideInDown 0.6s ease-out forwards;
+}
+
+/* Keyframes */
+@keyframes slideInLeft {
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInUp {
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInDown {
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+/* =========================================================
+   PREMIUM PROJECT CARDS (MODERN CLEAN + ICON TITLE ROW)
+   ========================================================= */
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 32px;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.project-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 18px;
+    padding: 26px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.18);
+    transition: 0.25s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+}
+
+/* Title row with icons */
+.project-card-title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+/* Icons row */
+.project-icons {
+    display: flex;
+    gap: 8px;
+}
+
+.project-icons img {
+    width: 22px;
+    height: 22px;
+    opacity: 0.9;
+}
+
+/* Description */
+.project-card p {
+    line-height: 1.55;
+    opacity: 0.85;
+}
+
+/* Slide-in animation */
+.project-card.slide-in-up {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideInUp 0.6s ease-out forwards;
+}
+
+@keyframes slideInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+/* Premium vertical title + centered icons */
+.skill-card-title-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;     /* Κεντράρει ΤΑ ΠΑΝΤΑ */
+    text-align: center;      /* Κάνει τον τίτλο center */
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.skill-card-title-block h3 {
+    width: 100%;
+}
+
+/* Icon row */
+.skill-card-title-block .skill-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;         /* Αν είναι πολλά icons → όμορφο wrap */
+}
+
+.skill-card-title-block .skill-icons img {
+    width: 26px;
+    height: 26px;
+    opacity: 0.95;
+    transition: 0.2s ease;
+}
+
+/* Hover effect (premium microinteraction) */
+.skill-card-title-block .skill-icons img:hover {
+    transform: scale(1.15);
+    opacity: 1;
+}
+
+/* Premium vertical title block for project cards */
+.project-card-title-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.project-card-title-block .project-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.project-card-title-block .project-icons img {
+    width: 26px;
+    height: 26px;
+    opacity: 0.95;
+    transition: 0.2s ease;
+}
+
+.project-card-title-block .project-icons img:hover {
+    transform: scale(1.15);
+    opacity: 1;
+}
+
+
+
+/* CONTACT GRID — PREMIUM SMALL CARDS */
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 28px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Contact Card */
+.contact-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.08);
+    padding: 22px 18px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.18);
+    transition: 0.25s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+/* Icon container */
+.contact-icon-wrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.contact-icon {
+    width: 42px;
+    height: 42px;
+    opacity: 0.95;
+    transition: 0.25s ease;
+}
+
+.contact-card:hover .contact-icon {
+    transform: scale(1.12);
+    opacity: 1;
+}
+
+/* Typography */
+.contact-card h3 {
+    margin-bottom: 6px;
+    font-size: 1.1rem;
+}
+
+.contact-card p a {
+    color: white;
+    opacity: 0.85;
+    text-decoration: none;
+}
+
+.contact-card p a:hover {
+    opacity: 1;
+}
