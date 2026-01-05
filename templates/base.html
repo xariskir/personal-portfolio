@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -64,3 +65,71 @@
 
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block seo %}
+        {% set seo_title = "Charis Kyritsis | Data Analyst & Machine Learning Engineer" %}
+        {% set seo_description = "Personal website of Charis Kyritsis, Data Analyst & Machine Learning Engineer specializing in data-driven and AI-powered solutions." %}
+    {% endblock %}
+
+    <title>{{ seo_title }}</title>
+    <meta name="description" content="{{ seo_description }}">
+
+    <link rel="canonical" href="https://charis-kyritsis.dev{{ request.path }}">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="{{ seo_title }}">
+    <meta property="og:description" content="{{ seo_description }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://charis-kyritsis.dev{{ request.path }}">
+    <meta property="og:image" content="https://charis-kyritsis.dev/static/images/og-preview.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ seo_title }}">
+    <meta name="twitter:description" content="{{ seo_description }}">
+    <meta name="twitter:image" content="https://charis-kyritsis.dev/static/images/og-preview.png">
+
+    <!-- Fonts & CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/cvio.css') }}">
+</head>
+
+<body>
+
+	
+
+    <!-- Vertical Lines Background -->
+    <div class="lines">
+        <div class="content">
+            <div class="line-col"></div>
+            <div class="line-col"></div>
+            <div class="line-col"></div>
+            <div class="line-col"></div>
+            <div class="line-col"></div>
+        </div>
+    </div>
+	
+	<!-- NEW CENTERED NAVIGATION -->
+    <nav class="top-menu">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/skills">Skills</a>
+        <a href="/projects">Projects</a>
+        <a href="/education">Education</a>
+        <a href="/resume">Resume</a>
+        <a href="/contact">Contact</a>
+    </nav>
+
+    
+    <!-- MAIN WRAPPER -->
+    <div class="wrapper">
+        {% block content %}{% endblock %}
+    </div>
+
+</body>
+</html>
+>>>>>>> 3899147f991a7f4b6bfa0243ce9b22cf12c10df7
