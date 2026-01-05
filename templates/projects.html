@@ -2,22 +2,65 @@
 
 {% block content %}
 <section class="projects">
-    <h1 class="section-title">Projects</h1>
+
+    <h1 class="section-title">My Projects</h1>
 
     <div class="projects-grid">
-        {% for project in projects %}
-        <a href="/projects/{{ project.id }}" class="project-card">
-            <span class="project-category">{{ project.category }}</span>
-            <h3>{{ project.title }}</h3>
-            <p>{{ project.summary }}</p>
 
-            <div class="project-stack">
-                {% for tech in project.stack %}
-                <span>{{ tech }}</span>
-                {% endfor %}
+        <!-- ===========================================
+             PROJECT 1 — INVOICE FRAUD DETECTOR
+        ============================================ -->
+        <div class="project-card slide-in-up">
+
+            <div class="project-card-title-block">
+                <h3>AI-Powered Invoice Fraud Detector</h3>
+
+                <div class="project-icons">
+                    <img src="/static/icons/python.svg" alt="Python">
+                    <img src="/static/icons/sklearn.svg" alt="Scikit-Learn">
+                    <img src="/static/icons/pandas.svg" alt="Pandas">
+                    <img src="/static/icons/numpy.svg" alt="NumPy">
+                    <img src="/static/icons/flask.svg" alt="Flask">
+                    <img src="/static/icons/sql.svg" alt="SQL">
+                </div>
             </div>
-        </a>
-        {% endfor %}
+
+            <p>
+                A production-ready fraud detection system using supervised models and
+                anomaly detection to identify suspicious invoices. Includes a Flask API,
+                SQL logging pipeline, preprocessing engine and explainability tools.
+            </p>
+
+        </div>
+
+
+        <!-- ===========================================
+             PROJECT 2 — BASKETBALL ANALYTICS PLATFORM
+        ============================================ -->
+        <div class="project-card slide-in-up">
+
+            <div class="project-card-title-block">
+                <h3>AI Basketball Analytics Platform</h3>
+
+                <div class="project-icons">
+                    <img src="/static/icons/python.svg" alt="Python">
+                    <img src="/static/icons/yolo.svg" alt="YOLO">
+                    <img src="/static/icons/opencv.svg" alt="OpenCV">
+                    <img src="/static/icons/pandas.svg" alt="Pandas">
+                    <img src="/static/icons/matplotlib.svg" alt="Matplotlib">
+                    <img src="/static/icons/numpy.svg" alt="NumPy">
+                </div>
+            </div>
+
+            <p>
+                A full computer vision & analytics engine capable of detecting players,
+                extracting plays, generating shot charts and advanced metrics from
+                basketball video footage using YOLO, OpenCV and Python.
+            </p>
+
+        </div>
+
     </div>
+
 </section>
 {% endblock %}

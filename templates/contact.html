@@ -2,34 +2,47 @@
 
 {% block content %}
 <section class="inner-page">
-    <h1>Contact</h1>
+    <h1 class="section-title">Contact</h1>
 
-    <div class="content-box">
+    <div class="contact-grid">
 
-        <div class="contact-row">
-
-            <div class="contact-card">
-                <h3>Email</h3>
-                <p><a href="mailto:kiritsisxaris@gmail.com">kiritsisxaris@gmail.com</a></p>
+        <!-- EMAIL -->
+        <div class="contact-card slide-in-up">
+            <div class="contact-icon-wrap">
+                <img src="/static/icons/gmail.svg" class="contact-icon">
             </div>
+            <h3>Email</h3>
+            <p>
+                <a href="mailto:kiritsisxaris@gmail.com">kiritsisxaris@gmail.com</a>
+            </p>
+        </div>
 
-            <div class="contact-card">
-                <h3>LinkedIn</h3>
-                <p><a href="https://www.linkedin.com/in/charis-kyritsis" target="_blank">
+        <!-- LINKEDIN -->
+        <div class="contact-card slide-in-up">
+            <div class="contact-icon-wrap">
+                <img src="/static/icons/linkedin.svg" class="contact-icon">
+            </div>
+            <h3>LinkedIn</h3>
+            <p>
+                <a href="https://www.linkedin.com/in/charis-kyritsis" target="_blank">
                     linkedin.com/in/charis-kyritsis
-                </a></p>
-            </div>
+                </a>
+            </p>
+        </div>
 
-            <div class="contact-card">
-                <h3>GitHub</h3>
-                <p><a href="https://github.com/xariskir" target="_blank">
+        <!-- GITHUB -->
+        <div class="contact-card slide-in-up">
+            <div class="contact-icon-wrap">
+                <img src="/static/icons/github.svg" class="contact-icon">
+            </div>
+            <h3>GitHub</h3>
+            <p>
+                <a href="https://github.com/xariskir" target="_blank">
                     github.com/xariskir
-                </a></p>
-            </div>
-
+                </a>
+            </p>
         </div>
 
     </div>
-
 </section>
 {% endblock %}
